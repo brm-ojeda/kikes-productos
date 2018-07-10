@@ -1,0 +1,250 @@
+.container
+	&-fluid
+		clearfix()
+
+.cont
+	&-banner
+		background-color #378145
+		background-image url("../images/banner-hogar.jpg")
+		background-position center
+		background-repeat no-repeat
+		border-radius 0 0 1rem 1rem
+		height 47rem
+		text-align center
+
+		img
+			margin-top 23.5rem
+			width 24rem
+
+		p
+			color #ffffff
+			font-family verdana
+			font-size 3rem
+			font-style italic
+			font-weight 400
+			margin 3rem 2rem 1rem
+			text-shadow 4px 3px 5px #000000d9
+
+			img
+				height 5rem
+				margin 0 .7rem
+				width 4rem
+
+		&-btn
+			color #ffffff
+			height 5rem
+			margin-top 1rem
+			text-align center
+
+			a
+				background #ffc708
+				color #ffffff
+				font-size 2rem
+				padding 1.2rem 10rem
+				text-shadow 0px 1px 4px #000000d6
+
+				&:hover
+					color #ffffff
+					text-decoration none
+
+				img
+					margin-left 1rem
+					vertical-align text-top
+					width 2.5rem
+	
+	&-btn-beneficios
+		color #ffc708
+		padding 1rem 0
+		text-transform uppercase
+
+		a
+			&:hover
+				color #ffc708
+				text-decoration none
+
+			&:focus
+				color #ffc708
+				outline none
+				text-decoration none
+
+		p
+			display inline-block
+			font-size 1.6rem
+			font-weight 400
+			margin 0
+
+		img
+			display inline-block !important
+			margin-right 1rem
+			vertical-align sub
+			width 1.7rem
+
+	&-btn-tab
+		height 5rem
+		margin 0 auto
+		margin-top 4rem
+		width 95%
+
+		a
+			border 1px solid #a09e9e
+			border-radius .7rem
+			color #409e50
+			margin-top 1rem
+			padding 1.2rem 7rem
+
+			&:hover
+				background-color #409e50
+				border 1px solid #409e50
+				color #ffffff
+
+				i
+					color #ffffff
+					transition all ease-in-out .3s
+
+			&:link
+				text-decoration none
+
+		i
+			border-radius 50%
+			display inline-block
+			font-size 2rem
+			margin-left 1rem
+			vertical-align bottom
+
+	&-carousel
+		height auto
+		
+	&-especifi-benefi
+		background-color #ffffff
+		border-radius 0 0 .7rem .7rem
+		box-shadow 0px 1px 5px #0000005c
+		height auto
+		
+		h6
+			font-size 1.6rem
+			font-weight 300
+			letter-spacing .1rem
+			margin 0rem 0 1.5rem 0
+			text-align left
+			text-transform uppercase
+
+		p
+			margin 0 0 .2rem 0
+			
+		.indica
+			color #a7a7a7
+			display inline-block
+			float left
+			font-weight 400
+			text-align left
+
+			
+		.responde
+			border-bottom 2px solid #ffc508
+			color #a7a7a7
+			display inline-block
+			float right
+			font-weight 300
+			text-align right
+
+		.responde-02
+			color #a7a7a7
+			display inline-block
+			float right
+			font-weight 300
+			text-align right
+			
+		.text-titulo
+			color #ffc708
+			display block
+			float left
+			font-weight 300
+			text-align left
+			
+		.text-parrafo
+			color #a7a7a7
+			float left
+			text-align left
+
+	&-especificaciones
+		display inline-block
+		padding 1.5rem 2rem
+		width 100%
+	
+	&-beneficios
+		display none
+		height 32rem
+		overflow-y auto
+		padding 1.5rem 2rem
+		width 100%
+	
+	&-h4
+		margin-top 2.5rem
+
+		h4
+			background-color #ffc708
+			border-radius 1rem 1rem 0 0
+			color #ffffff
+			font-size 2rem
+			font-weight 300
+			letter-spacing .1rem
+			margin 0
+			padding .7rem 0
+			text-align center
+			text-shadow 0px 1px 4px #000000d6
+			text-transform uppercase
+
+	&-tabs
+		margin-bottom 4rem
+		text-align center
+
+	&-tab-info
+		background-color #409e50
+		height auto
+
+	&-titulo-sec
+		border-bottom 3px solid #ffc508
+		margin 4rem auto
+		width 97%
+
+	&-triangulo
+		text-align center
+		width 95%
+
+		span
+			border-left 25px solid transparent
+			border-right 25px solid transparent
+			border-top 15px solid #ececec
+			height 0 
+			position absolute	
+			width 0
+
+	&-seccion-text
+		color #ffffff
+		text-align center
+		
+		h3
+			color #ffffff
+			margin 4rem 0 2rem 0
+			
+		p
+			font-size 2rem
+			letter-spacing .1rem
+			margin 3rem
+			text-align left
+
+
+	// mobil
+		
+	@media (max-width: 770px)
+
+		&-tabs
+			margin-bottom 7rem
+			
+		&-banner
+			img
+				margin-top 19.5rem
+
+			p
+				margin 3rem 1.5rem 1rem
+			

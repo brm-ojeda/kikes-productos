@@ -1,0 +1,253 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	title Ejemplo de meta title
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Frontend BRM" )
+
+
+block content
+	//- banner
+	section
+		div.container-fluid.container-slider
+			div.slide
+				figure
+					img(src="images/header-productos.jpg")
+	//- Fin banner
+
+	//- Selectores
+	section
+		div.container-fluid
+				div.row
+					div.col-xs-12.col-sm-12.col-md-12.cont-tabs
+						div.cont-titulo-sec
+							h1 PRODUCTOS
+
+						//- Kikes tradicional
+						div.col-xs-12.col-sm-6.col-md-6.card-tab
+							a(href='#caja', id='card-uno', onclick='MostrarOcultar()', data-cambio='Ocultar')
+								div.cont-card
+									figure
+										img(src='images/kikes-tradicional.jpg')
+									p Kikes Tradicional
+
+							div.cont-btn-tab
+								a(href='https://www.google.com.co/', target='_blank')
+									span VER FICHA TÉCNICA
+									i.fa.fa-plus-circle(aria-hidden='true')
+
+						//- Kikes pasteurizado
+						div.col-xs-12.col-sm-6.col-md-6.card-tab
+							a(href='#caja-dos', id='card-dos', onclick='MostrarOcultar_dos()', data-cambio='Ocultar')
+								div.cont-card
+									figure
+										img(src='images/kikes-pasteurizado.jpg')
+									p Kikes Pasteurizado
+
+	//- KIKES TRADICIONAL - 01
+	section#caja
+		//- Kikes en empaque pulpa - 01
+		div.container-fluid.cont-tab-info
+			div.row
+				div.col-xs-12.col-sm-6.col-md-6.cont-triangulo
+					span
+				div.cont-seccion-text
+					h3 Kikes en empaque pulpa
+
+				//- SLIDE 01
+				div.col-xs-12.cont-carousel
+					div.prev-slide
+						img(src='images/arow-slide-izq.svg')
+
+					div.responsive
+						div.carousel-item
+							figure(id='img-beneficios' onclickk='Ocultar_beneficios()')
+								img(src='images/slide-01.jpg')
+							div.cont-titulo(onclick='Ocultar_beneficios()')
+								h5 pasteurizado - cáscara
+								span.btn-row-down(id='arrow-down')
+									img(src='images/arow-down.svg')
+
+							//- Especificaciones
+							div.cont-especifi-benefi
+								div.cont-especificaciones(id='cont-especificaciones')
+									h6 Especificaciones
+									div.row
+										p.indica Clasificación
+										p.responde A - AA
+									div.row
+										p.indica Cantidad
+										p.responde-02 30 Huevos Kikes
+									div.row
+										p.indica Embalaje
+										p.responde-02 Caja x300 - x360 unidades
+
+								//- Beneficios
+								div.cont-beneficios(id='cont-beneficios')
+									div.row
+										p.text-titulo DESEMPEÑO Y FUNCIONALIDAD
+									div.row
+										p.text-parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									div.row
+										p.text-titulo DESEMPEÑO Y FUNCIONALIDAD
+									div.row
+										p.text-parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									div.row
+										p.text-titulo DESEMPEÑO Y FUNCIONALIDAD
+									div.row
+										p.text-parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									div.row
+										p.text-titulo DESEMPEÑO Y FUNCIONALIDAD
+									div.row
+										p.text-parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									div.row
+										p.text-titulo DESEMPEÑO Y FUNCIONALIDAD
+									div.row
+										p.text-parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									div.row
+										p.text-titulo DESEMPEÑO Y FUNCIONALIDAD
+									div.row
+										p.text-parrafo Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+							//- Boton Beneficios
+							div.cont-btn-beneficios(id='btn_beneficios', onclick='beneficios()', value='' data-ben='')
+								span(id='ben-icon')
+									img(src='images/cruz.svg')
+								p(id='ben-text') conoce sus beneficios
+
+						div.carousel-item
+							p 2
+						div.carousel-item
+							p 3
+						div.carousel-item
+							p 4
+
+					div.next-slide
+						img(src='images/arow-slide-der.svg')
+
+				//- Fin SLIDE 01
+
+		//- Kikes en empaque R-PET - 02
+		div.container-fluid.cont-tab-info
+			div.row
+				div.cont-seccion-text
+					h3 Kikes en empaque R-PET
+					p Huevos seleccionados con cáscara limpia, en un empaque transparente que permite ver la calidad y color de sus Kikes, con un diseño y tecnología más resistente contra el quiebre.
+
+				//- SLIDE 02
+				div.col-xs-12.cont-carousel
+					div.prev-slide-02
+						img(src='images/arow-slide-izq.svg')
+
+					div.responsive-02
+						div.carousel-item
+							figure
+								img(src='images/slide-03.jpg')
+							div.cont-titulo
+								h5 pasteurizado - cáscara
+								span.btn-row-down
+									img(src='images/arow-down.svg')
+
+							//- Especificaciones
+							div.cont-especifi-benefi
+								div.cont-especificaciones
+									h6 Especificaiones
+									div.row
+										p.indica Clasificación
+										p.responde A - AA
+									div.row
+										p.indica Cantidad
+										p.responde-02 30 Huevos Kikes
+									div.row
+										p.indica Embalaje
+										p.responde-02 Caja x300 - x360 unidades
+
+						div.carousel-item
+							p 2
+						div.carousel-item
+							p 3
+						div.carousel-item
+							p 4
+
+					div.next-slide-02
+						img(src='images/arow-slide-der.svg')
+
+				//- Fin SLIDE 02
+
+	//- KIKES PASTEURIZADO - 02
+	section#caja-dos
+		div.container-fluid.cont-tab-info
+			div.row
+				div.col-xs-12.col-sm-6.col-sm-offset-6.col-md-6.cont-triangulo
+					span
+				div.cont-seccion-text
+					h3 Consumo Hogar
+				div.cont-h4
+					h4 Huevo en cáscara pasteurizado
+				div.cont-banner
+					img(src='images/logo-kikes-banner-hogar.png')
+					p
+						| Huevos pasteurizados, huevos
+						img(src='images/cruz-text-banner-hogar.svg')
+						| seguros
+
+				div.cont-banner-btn
+					a(href='https://www.google.com.co/', target='_blank')
+						span CONOCE MÁS
+							img(src='images/icon-more-blanco.svg')
+
+				div.cont-seccion-text
+					h3 Food Service
+
+				//- SLIDE 03
+				div.col-xs-12.cont-carousel
+					div.prev-slide-03
+						img(src='images/arow-slide-izq.svg')
+
+					div.responsive-03
+						div.carousel-item
+							figure
+								img(src='images/slide-03.jpg')
+							div.cont-titulo
+								h5 pasteurizado - cáscara
+								span.btn-row-down
+									img(src='images/arow-down.svg')
+
+							//- Especificaciones
+							div.cont-especifi-benefi
+								div.cont-especificaciones
+									h6 Especificaiones
+									div.row
+										p.indica Clasificación
+										p.responde A - AA
+									div.row
+										p.indica Cantidad
+										p.responde-02 30 Huevos Kikes
+									div.row
+										p.indica Embalaje
+										p.responde-02 Caja x300 - x360 unidades
+
+						div.carousel-item
+							p 2
+						div.carousel-item
+							p 3
+						div.carousel-item
+							p 4
+
+					div.next-slide-03
+						img(src='images/arow-slide-der.svg')
+
+				//- Fin SLIDE 03/
+
+
+block Scripts
+	//- Slide Slick
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+	script(src='http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+			
+	script(src='js/smooth-scroll.min.js')
+	script(src='js/productos.js')

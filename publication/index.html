@@ -1,0 +1,251 @@
+<!DOCTYPE html><!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es-CO"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="es-CO"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="es-CO"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es-CO"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Ejemplo de meta title</title>
+  <meta name="description" content="Frontend BRM">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/frontend-brm.min.css">
+  <!-- Web Fonts-->
+  <link href="http://fonts.googleapis.com/css?family=Varela+Round|Roboto:400italic,300,700,400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://www.huevoskikes.com/sites/all/themes/kikesTheme/css/site-kikes.min.css?p3hp4u">
+  <!-- Slick-->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <!-- Font Awesome-->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"><!--[if lt IE]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+  <section>
+    <div class="container-fluid container-slider">
+      <div class="slide">
+        <figure><img src="images/header-productos.jpg"></figure>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 cont-tabs">
+          <div class="cont-titulo-sec">
+            <h1>PRODUCTOS</h1>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 card-tab"><a href="#caja" id="card-uno" onclick="MostrarOcultar()" data-cambio="Ocultar">
+              <div class="cont-card">
+                <figure><img src="images/kikes-tradicional.jpg"></figure>
+                <p>Kikes Tradicional</p>
+              </div></a>
+            <div class="cont-btn-tab"><a href="https://www.google.com.co/" target="_blank"><span>VER FICHA TÉCNICA</span><i class="fa fa-plus-circle" aria-hidden="true"></i></a></div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 card-tab"><a href="#caja-dos" id="card-dos" onclick="MostrarOcultar_dos()" data-cambio="Ocultar">
+              <div class="cont-card">
+                <figure><img src="images/kikes-pasteurizado.jpg"></figure>
+                <p>Kikes Pasteurizado</p>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="caja">
+    <div class="container-fluid cont-tab-info">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 cont-triangulo"><span></span></div>
+        <div class="cont-seccion-text">
+          <h3>Kikes en empaque pulpa</h3>
+        </div>
+        <div class="col-xs-12 cont-carousel">
+          <div class="prev-slide"><img src="images/arow-slide-izq.svg"></div>
+          <div class="responsive">
+            <div class="carousel-item">
+              <figure id="img-beneficios" onclickk="Ocultar_beneficios()"><img src="images/slide-01.jpg"></figure>
+              <div class="cont-titulo" onclick="Ocultar_beneficios()">
+                <h5>pasteurizado - cáscara</h5><span class="btn-row-down" id="arrow-down"><img src="images/arow-down.svg"></span>
+              </div>
+              <div class="cont-especifi-benefi">
+                <div class="cont-especificaciones" id="cont-especificaciones">
+                  <h6>Especificaciones</h6>
+                  <div class="row">
+                    <p class="indica">Clasificación</p>
+                    <p class="responde">A - AA</p>
+                  </div>
+                  <div class="row">
+                    <p class="indica">Cantidad</p>
+                    <p class="responde-02">30 Huevos Kikes</p>
+                  </div>
+                  <div class="row">
+                    <p class="indica">Embalaje</p>
+                    <p class="responde-02">Caja x300 - x360 unidades</p>
+                  </div>
+                </div>
+                <div class="cont-beneficios" id="cont-beneficios">
+                  <div class="row">
+                    <p class="text-titulo">DESEMPEÑO Y FUNCIONALIDAD</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-titulo">DESEMPEÑO Y FUNCIONALIDAD</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-titulo">DESEMPEÑO Y FUNCIONALIDAD</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-titulo">DESEMPEÑO Y FUNCIONALIDAD</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-titulo">DESEMPEÑO Y FUNCIONALIDAD</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-titulo">DESEMPEÑO Y FUNCIONALIDAD</p>
+                  </div>
+                  <div class="row">
+                    <p class="text-parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cont-btn-beneficios" id="btn_beneficios" onclick="beneficios()" value="" data-ben=""><span id="ben-icon"><img src="images/cruz.svg"></span>
+                <p id="ben-text">conoce sus beneficios</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p>2</p>
+            </div>
+            <div class="carousel-item">
+              <p>3</p>
+            </div>
+            <div class="carousel-item">
+              <p>4</p>
+            </div>
+          </div>
+          <div class="next-slide"><img src="images/arow-slide-der.svg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid cont-tab-info">
+      <div class="row">
+        <div class="cont-seccion-text">
+          <h3>Kikes en empaque R-PET</h3>
+          <p>Huevos seleccionados con cáscara limpia, en un empaque transparente que permite ver la calidad y color de sus Kikes, con un diseño y tecnología más resistente contra el quiebre.</p>
+        </div>
+        <div class="col-xs-12 cont-carousel">
+          <div class="prev-slide-02"><img src="images/arow-slide-izq.svg"></div>
+          <div class="responsive-02">
+            <div class="carousel-item">
+              <figure><img src="images/slide-03.jpg"></figure>
+              <div class="cont-titulo">
+                <h5>pasteurizado - cáscara</h5><span class="btn-row-down"><img src="images/arow-down.svg"></span>
+              </div>
+              <div class="cont-especifi-benefi">
+                <div class="cont-especificaciones">
+                  <h6>Especificaiones</h6>
+                  <div class="row">
+                    <p class="indica">Clasificación</p>
+                    <p class="responde">A - AA</p>
+                  </div>
+                  <div class="row">
+                    <p class="indica">Cantidad</p>
+                    <p class="responde-02">30 Huevos Kikes</p>
+                  </div>
+                  <div class="row">
+                    <p class="indica">Embalaje</p>
+                    <p class="responde-02">Caja x300 - x360 unidades</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p>2</p>
+            </div>
+            <div class="carousel-item">
+              <p>3</p>
+            </div>
+            <div class="carousel-item">
+              <p>4</p>
+            </div>
+          </div>
+          <div class="next-slide-02"><img src="images/arow-slide-der.svg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="caja-dos">
+    <div class="container-fluid cont-tab-info">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-6 cont-triangulo"><span></span></div>
+        <div class="cont-seccion-text">
+          <h3>Consumo Hogar</h3>
+        </div>
+        <div class="cont-h4">
+          <h4>Huevo en cáscara pasteurizado</h4>
+        </div>
+        <div class="cont-banner"><img src="images/logo-kikes-banner-hogar.png">
+          <p>Huevos pasteurizados, huevos<img src="images/cruz-text-banner-hogar.svg">seguros</p>
+        </div>
+        <div class="cont-banner-btn"><a href="https://www.google.com.co/" target="_blank"><span>CONOCE MÁS<img src="images/icon-more-blanco.svg"></span></a></div>
+        <div class="cont-seccion-text">
+          <h3>Food Service</h3>
+        </div>
+        <div class="col-xs-12 cont-carousel">
+          <div class="prev-slide-03"><img src="images/arow-slide-izq.svg"></div>
+          <div class="responsive-03">
+            <div class="carousel-item">
+              <figure><img src="images/slide-03.jpg"></figure>
+              <div class="cont-titulo">
+                <h5>pasteurizado - cáscara</h5><span class="btn-row-down"><img src="images/arow-down.svg"></span>
+              </div>
+              <div class="cont-especifi-benefi">
+                <div class="cont-especificaciones">
+                  <h6>Especificaiones</h6>
+                  <div class="row">
+                    <p class="indica">Clasificación</p>
+                    <p class="responde">A - AA</p>
+                  </div>
+                  <div class="row">
+                    <p class="indica">Cantidad</p>
+                    <p class="responde-02">30 Huevos Kikes</p>
+                  </div>
+                  <div class="row">
+                    <p class="indica">Embalaje</p>
+                    <p class="responde-02">Caja x300 - x360 unidades</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <p>2</p>
+            </div>
+            <div class="carousel-item">
+              <p>3</p>
+            </div>
+            <div class="carousel-item">
+              <p>4</p>
+            </div>
+          </div>
+          <div class="next-slide-03"><img src="images/arow-slide-der.svg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
+  <script src="js/productos.js"></script>
+</body></html>
